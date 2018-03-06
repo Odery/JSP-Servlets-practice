@@ -12,6 +12,12 @@ Source will show you ordinary HTML <br/>
     <p align="center">Last name: <input type="text" name="lastName"></p>
     <p align="center">Gender: <input type="radio" name="gender" value="Mela"> Male <input type="radio" name="gender"
                                                                                           value="Female"> Female</p>
+    <p align="center">
+        <input type="checkbox" name="favoriteLanguage" value="Java"> Java
+        <input type="checkbox" name="favoriteLanguage" value="C#"> C#
+        <input type="checkbox" name="favoriteLanguage" value="PHP"> PHP
+        <input type="checkbox" name="favoriteLanguage" value="Ruby"> Ruby
+    </p>
     <p align="center"> Country:
         <select name="country">
             <option>Ukraine</option>

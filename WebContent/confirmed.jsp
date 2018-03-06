@@ -1,11 +1,17 @@
 <html>
 <head><title>Student is confirmed!</title></head>
 <body>
-<br/><br/>
-<h1 align="center"> Thanks for your data: ${param.firstName} ${param.lastName}</h1>
 <br/>
-<h2 align="center"> You country is: ${param.country}</h2>
-<br/>
-<h2 align="center">Gender: ${param.gender}</h2>
+<h3> Thanks for your data: ${param.firstName} ${param.lastName}</h3>
+<p>You country is: ${param.country}</p>
+<p>Gender: ${param.gender}</p>
+<p>You favorite programming languages is:
+<ul><%
+    String[] langs = request.getParameterValues("favoriteLanguage");
+
+    if (langs != null)
+        for (String lang : langs)
+            out.println("<li>" + lang + "</li>");
+%></ul>
 </body>
 </html>
