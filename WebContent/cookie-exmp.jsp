@@ -12,7 +12,6 @@
 %>
 <body>
 Thanks! We set you favorite language to: ${param.lang}
-
 <br/><br/>
 <a href="main-cookie-homepage-exmp.jsp">Rerurn to homepage</a>
 </body>

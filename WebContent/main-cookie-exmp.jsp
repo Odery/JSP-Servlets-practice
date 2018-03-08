@@ -8,8 +8,8 @@
     <select name="lang">
         <option>Java</option>
         <option>PHP</option>
-        <option>C#</option>
         <option>Ruby</option>
+        <option>C#</option>
     </select>
     <input type="submit" name="Submit"/>
 </form>

@@ -18,19 +18,19 @@
     }
 %>
 <br/>
-<h4>Hot books for <%=lang%>
-</h4>
-<ul>
-    <li>Blah blah blah</li>
-    <li>Blah blah blah</li>
-    <li>Blah blah blah</li>
-</ul>
 <h4>Hot jobs for <%=lang%>
 </h4>
 <ul>
     <li>Junior <%=lang%> developer</li>
     <li>Middle <%=lang%> developer</li>
     <li>Senior <%=lang%> developer</li>
+</ul>
+<h4>Hot books for <%=lang%>
+</h4>
+<ul>
+    <li>Blah blah blah</li>
+    <li>Blah blah blah</li>
+    <li>Blah blah blah</li>
 </ul>
 <h4>Latest news for <%=lang%>
 </h4>
