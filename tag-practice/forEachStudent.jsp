@@ -25,7 +25,11 @@
         <tr>
             <td>${student.firstName}</td>
             <td>${student.lastName}</td>
-            <td>${student.premium}</td>
+            <td>
+                <c:if test="${student.premium}">
+                    Special discount
+                </c:if>
+            </td>
         </tr>
     </c:forEach>
 </table>
