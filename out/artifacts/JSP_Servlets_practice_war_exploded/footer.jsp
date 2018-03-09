@@ -1,0 +1,1 @@
+<p align="center"> Last refresh: <%=new java.util.Date()%>.</p>
