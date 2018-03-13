@@ -1,5 +1,6 @@
 package servlets;
 
+import javax.servlet.ServletContext;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -15,6 +16,18 @@ public class form_servlet extends HttpServlet{
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
         out.println("Form confirmed: " + request.getParameter("fName") + ", " + request.getParameter("lName") + ", " + request.getParameter("email"));
+        out.println("</body></html>");
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        response.setContentType("text/html");
+        PrintWriter out = response.getWriter();
+        ServletContext context = getServletContext();
+        out.println("<html><body>");
+        out.println("Group Date is: " + context.getInitParameter("GroupDate"));
+        out.println("<br/>");
+        out.println("Parameter value: " + context.getInitParameter("ParamValue"));
         out.println("</body></html>");
     }
 }
