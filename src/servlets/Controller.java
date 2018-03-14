@@ -16,5 +16,6 @@ public class Controller extends HttpServlet {
         request.setAttribute("list", model);
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/view.jsp");
+        dispatcher.forward(request, response);
     }
 }
