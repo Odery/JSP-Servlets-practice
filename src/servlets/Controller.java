@@ -12,8 +12,7 @@ import java.io.IOException;
 public class Controller extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String[] model = {"Steve", "Igor", "Roger", "Henry"};
-        request.setAttribute("list", model);
+        request.setAttribute("list", StudentDataModel.getStudents());
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/view.jsp");
         dispatcher.forward(request, response);
