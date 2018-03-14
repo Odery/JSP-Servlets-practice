@@ -11,4 +11,7 @@
         <param-name>ParamValue</param-name>
         <param-value>Kimovo</param-value>
     </context-param>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
 </web-app>
